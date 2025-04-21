@@ -1,0 +1,100 @@
+.message {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  span {
+    max-width: 440px;
+    width: 100%;
+    display: inline-block;
+    font-size: 40px;
+    font-family: "Gaegu", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #6f0025;
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 25px;
+    }
+  }
+}
+
+.aboutUs {
+  margin-bottom: 50px;
+
+  p {
+    font-size: 27px;
+    font-family: "Fustat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    @media (max-width: 1024px) {
+      font-size: 22px;
+    }
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.note {
+  background-color: #fff;
+  border-radius: 160px;
+  text-align: center;
+  padding: 34px 90px;
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+  @media (max-width: 1024px) {
+    padding: 60px;
+  }
+  @media (max-width: 425px) {
+    padding: 60px 48px;
+  }
+  .notesText {
+    position: absolute;
+    top: -80px;
+    left: -51px;
+    transform: rotate(353deg);
+    @media (max-width: 525px) {
+      transform: rotate(353deg);
+    }
+    .impText {
+      position: absolute;
+      display: inline-block;
+      color: #6f0025;
+      font-family: "Gaegu", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      top: 90px;
+      max-width: 232px;
+      width: 100%;
+      left: 0;
+      transform: rotate(340deg);
+      font-size: 24px;
+      @media (max-width: 525px) {
+        font-size: 22px;
+      }
+    }
+  }
+  .desc {
+    display: inline-block;
+    font-size: 30px;
+    color: #6f0025;
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    @media (max-width: 1024px) {
+      font-size: 26px;
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
+  }
+}

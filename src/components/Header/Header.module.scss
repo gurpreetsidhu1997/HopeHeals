@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Gaegu&display=swap");
+
+.header {
+  background-color: #fef2f4;
+  padding: 25px 0;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    .logoImg {
+      img {
+        height: 30px;
+      }
+    }
+    .menuList {
+      max-width: 500px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      li {
+        a {
+          font-family: "Fustat";
+          font-weight: 400;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
+
+.header {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 2px solid #f9c2c2;
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logoImg img {
+  height: 40px;
+}
+
+.menuList {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+
+  li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+
+    &:hover {
+      color: #6f0025;
+    }
+  }
+}
+
+.desktopMenu {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.mobileToggle {
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 94%;
+  border: 2px solid #f9c2c2;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+
+    &:hover {
+      color: #6f0025;
+    }
+  }
+}

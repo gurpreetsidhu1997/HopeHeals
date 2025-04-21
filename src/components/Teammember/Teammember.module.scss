@@ -1,0 +1,61 @@
+.teamSection {
+  background-color: #fbbfc0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.heading {
+  font-family: "Gaegu", cursive;
+  color: #6f0025;
+  margin-bottom: 40px;
+  font-size: 38px;
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  @media (max-width: 525px) {
+    justify-content: center;
+  }
+}
+
+.card {
+  width: 220px;
+  transition: transform 0.3s ease;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 100%;
+    min-height: 260px;
+    object-fit: cover;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .details {
+    background-color: #fff;
+    border-radius: 25px;
+    font-size: 12px;
+    padding: 10px;
+    p {
+      margin: 5px 0;
+    }
+  }
+}
+
+.viewAll {
+  display: inline-block;
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}

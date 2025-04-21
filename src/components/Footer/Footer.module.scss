@@ -1,0 +1,32 @@
+.footer {
+  background-color: #fef2f4;
+  border-radius: 0px 60px 60px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 30px 0;
+
+  .contacts {
+    width: 300px;
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6f0025;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    span {
+      font-size: 20px;
+      display: inline-block;
+    }
+  }
+  .socialIcon {
+    display: flex;
+    gap: 30px;
+    img {
+      height: 40px;
+    }
+  }
+}

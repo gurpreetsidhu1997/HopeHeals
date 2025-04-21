@@ -1,0 +1,63 @@
+.messageList {
+  background-color: #fef2f4;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  @media (max-width: 525px) {
+    padding: 5px 10px;
+  }
+  @media (max-width: 767px) {
+    padding: 8px 15px;
+  }
+
+  &:nth-of-type(even) {
+    border-radius: 60px 0px 60px 60px;
+  }
+
+  &:nth-of-type(odd) {
+    border-radius: 0px 60px 60px;
+  }
+
+  .message {
+    display: inline-block;
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    color: #6f0025;
+
+    @media (max-width: 767px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 525px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 20px;
+    }
+  }
+
+  /* Scrollbar Styling */
+  scrollbar-width: thin;
+  scrollbar-color: #6f0025 #f9c2c2; // Thumb and track for Firefox
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f9c2c2; // light pink track
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #6f0025; // deep red thumb
+    border-radius: 10px;
+    border: 2px solid #f9c2c2; // for padding effect
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #8a0032; // slightly darker on hover
+  }
+}
